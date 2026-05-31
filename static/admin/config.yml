@@ -31,8 +31,27 @@ collections:
         required: false
         collapsed: true
         fields:
-          - { label: "标签", name: "tags", widget: "list", required: false }
-          - { label: "分类", name: "categories", widget: "list", required: false }
+          - label: "标签"
+            name: "tags"
+            widget: "select"
+            multiple: true
+            options:
+              - { label: "博客", value: "blog" }
+              - { label: "必看", value: "featured" }
+              - { label: "热门", value: "hot" }
+              - { label: "项目", value: "project" }
+              - { label: "作品", value: "works" }
+              - { label: "技术", value: "tech" }
+              - { label: "文档", value: "docs" }
+            required: false
+          - label: "分类"
+            name: "categories"
+            widget: "select"
+            multiple: true
+            options:
+              - { label: "杂谈", value: "misc" }
+              - { label: "主题", value: "theme" }
+            required: false
       - { label: "置顶权重", name: "weight", widget: "number", required: false, value_type: "int" }
       - label: "封面和链接"
         name: "extra"
@@ -67,8 +86,27 @@ collections:
         required: false
         collapsed: true
         fields:
-          - { label: "标签", name: "tags", widget: "list", required: false }
-          - { label: "分类", name: "categories", widget: "list", required: false }
+          - label: "标签"
+            name: "tags"
+            widget: "select"
+            multiple: true
+            options:
+              - { label: "博客", value: "blog" }
+              - { label: "必看", value: "featured" }
+              - { label: "热门", value: "hot" }
+              - { label: "项目", value: "project" }
+              - { label: "作品", value: "works" }
+              - { label: "技术", value: "tech" }
+              - { label: "文档", value: "docs" }
+            required: false
+          - label: "分类"
+            name: "categories"
+            widget: "select"
+            multiple: true
+            options:
+              - { label: "杂谈", value: "misc" }
+              - { label: "主题", value: "theme" }
+            required: false
       - { label: "置顶权重", name: "weight", widget: "number", required: false, value_type: "int" }
       - label: "封面和链接"
         name: "extra"
