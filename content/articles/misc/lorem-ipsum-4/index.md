@@ -1,6 +1,7 @@
 +++
-title = "Lorem Ipsum 4"
+title = "Lorem Ipsum 44"
 date = 2024-12-17
+updated = "2026-05-31T11:27:00.000+02:00"
 description = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 
 [taxonomies]
@@ -8,7 +9,7 @@ tags = ["blog", "featured", "hot"]
 categories = ["misc"]
 
 [extra]
-global_cover  = "/articles/misc/Lorem Ipsum/cover.webp"
+global_cover = "/articles/misc/Lorem Ipsum/cover.webp"
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec diam id libero egestas hendrerit. Suspendisse suscipit, libero vitae suscipit suscipit, magna justo feugiat nibh, at fermentum justo ex sed ex. Fusce tincidunt non dolor mollis fringilla. Mauris dui justo, dapibus et dui eu, mollis viverra eros. Aenean molestie ipsum quis rutrum tempus. Cras ac ipsum fringilla dui elementum viverra id vitae libero. Phasellus sed neque a est rutrum vulputate nec id nunc.
