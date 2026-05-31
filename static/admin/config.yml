@@ -25,13 +25,25 @@ collections:
       - { label: "发布日期", name: "date", widget: "datetime" }
       - { label: "更新日期", name: "updated", widget: "datetime", required: false }
       - { label: "描述", name: "description", widget: "string", required: false }
-      - { label: "标签", name: "taxonomies.tags", widget: "list", required: false }
-      - { label: "分类", name: "taxonomies.categories", widget: "list", required: false }
+      - label: "分类和标签"
+        name: "taxonomies"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "标签", name: "tags", widget: "list", required: false }
+          - { label: "分类", name: "categories", widget: "list", required: false }
       - { label: "置顶权重", name: "weight", widget: "number", required: false, value_type: "int" }
-      - { label: "封面图", name: "extra.cover", widget: "string", required: false }
-      - { label: "全局封面路径", name: "extra.global_cover", widget: "string", required: false }
-      - { label: "微信公众号链接", name: "extra.wechat_url", widget: "string", required: false }
-      - { label: "显示更新提示", name: "extra.update_tip_enable", widget: "boolean", required: false, default: false }
+      - label: "封面和链接"
+        name: "extra"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "封面图", name: "cover", widget: "string", required: false }
+          - { label: "全局封面路径", name: "global_cover", widget: "string", required: false }
+          - { label: "微信公众号链接", name: "wechat_url", widget: "string", required: false }
+          - { label: "更新提示", name: "update_tip_enable", widget: "boolean", required: false, default: false }
       - { label: "正文", name: "body", widget: "markdown" }
 
   - name: "docs"
@@ -49,12 +61,24 @@ collections:
       - { label: "发布日期", name: "date", widget: "datetime" }
       - { label: "更新日期", name: "updated", widget: "datetime", required: false }
       - { label: "描述", name: "description", widget: "string", required: false }
-      - { label: "标签", name: "taxonomies.tags", widget: "list", required: false }
-      - { label: "分类", name: "taxonomies.categories", widget: "list", required: false }
+      - label: "分类和标签"
+        name: "taxonomies"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "标签", name: "tags", widget: "list", required: false }
+          - { label: "分类", name: "categories", widget: "list", required: false }
       - { label: "置顶权重", name: "weight", widget: "number", required: false, value_type: "int" }
-      - { label: "封面图", name: "extra.cover", widget: "string", required: false }
-      - { label: "全局封面路径", name: "extra.global_cover", widget: "string", required: false }
-      - { label: "显示更新提示", name: "extra.update_tip_enable", widget: "boolean", required: false, default: false }
+      - label: "封面和链接"
+        name: "extra"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "封面图", name: "cover", widget: "string", required: false }
+          - { label: "全局封面路径", name: "global_cover", widget: "string", required: false }
+          - { label: "更新提示", name: "update_tip_enable", widget: "boolean", required: false, default: false }
       - { label: "正文", name: "body", widget: "markdown" }
 
   - name: "pages"
