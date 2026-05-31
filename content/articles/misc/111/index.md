@@ -5,5 +5,6 @@ description = "111"
 
 [extra]
 update_tip_enable = false
+global_cover = "/articles/misc/Lorem Ipsum/cover.webp"
 +++
 111111
