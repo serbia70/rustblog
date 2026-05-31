@@ -50,8 +50,9 @@ export default async (req, res) => {
 <script>
 (function() {
   function receiveMessage(message) {
+    var payload = JSON.stringify({ token: "${data.access_token}", scope: "${data.scope || 'repo,user'}" });
     window.opener.postMessage(
-      "authorization:github:${data.access_token}:${data.scope || "repo,user"}",
+      "authorization:github:success:" + payload,
       message.origin
     );
     window.close();
