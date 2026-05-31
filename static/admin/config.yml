@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: serbia70/rustblog
+  branch: main
+  base_url: https://rustblog-ivory.vercel.app
+  auth_endpoint: /api/auth
+
+publish_mode: editorial_workflow
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "articles"
+    label: "文章"
+    folder: "content/articles"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: "../../static/img/{{slug}}"
+    public_folder: "/img/{{slug}}"
+    editor:
+      preview: false
+    view_filters:
+      - label: "文档"
+        field: tags
+        pattern: docs
+      - label: "杂谈"
+        field: tags
+        pattern: misc
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "更新日期", name: "updated", widget: "datetime", required: false }
+      - { label: "描述", name: "description", widget: "string", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "分类", name: "categories", widget: "list", required: false }
+      - { label: "置顶权重", name: "weight", widget: "number", required: false, value_type: "int" }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "页面"
+    folder: "content/pages"
+    create: true
+    path: "{{slug}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "描述", name: "description", widget: "string", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }

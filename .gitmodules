@@ -1,0 +1,3 @@
+[submodule "themes/jiaxiang-wang"]
+	path = themes/jiaxiang-wang
+	url = https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang.git
