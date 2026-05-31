@@ -1,7 +1,6 @@
 +++
-title = "Lorem Ipsum 4"
+title = "Lorem Ipsum 3"
 date = 2024-12-17
-slug = "lorem-ipsum-4"
 description = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 
 [taxonomies]

@@ -1,11 +1,10 @@
 +++
-title = "Lorem Ipsum 5"
+title = "Lorem Ipsum 6"
 date = 2024-12-17
-slug = "lorem-ipsum-5"
 description = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 
 [taxonomies]
-tags = ["blog", "featured", "work"]
+tags = ["blog", "hot", "project"]
 categories = ["misc"]
 
 [extra]

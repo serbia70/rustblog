@@ -1,7 +1,6 @@
 +++
 title = "zola-theme-jiaxiang.wang 主题介绍"
 date = 2024-12-17
-slug = "readme"
 description = "介绍开源 Zola 博客主题 zola-theme-jiaxiang.wang"
 
 [taxonomies]

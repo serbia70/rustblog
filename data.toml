@@ -3,18 +3,18 @@
 [post]
 # 首页 Header 右侧推荐，建议 6 篇，填写 content 到 md 文件的相对地址
 recommend_posts = [
-    "articles/misc/Lorem Ipsum/index.md",
-    "articles/misc/Lorem Ipsum 3/index.md",
-    "articles/misc/Lorem Ipsum 4/index.md",
-    "articles/misc/Lorem Ipsum 5/index.md",
-    "articles/misc/Lorem Ipsum 6/index.md",
+    "articles/misc/lorem-ipsum/index.md",
+    "articles/misc/lorem-ipsum-3/index.md",
+    "articles/misc/lorem-ipsum-4/index.md",
+    "articles/misc/lorem-ipsum-5/index.md",
+    "articles/misc/lorem-ipsum-6/index.md",
 ]
 
 # 首页 header 右侧
 [post.today_recommend]
 ## 1， 推荐特定文章
 # 文章地址
-post_path = "articles/docs/01 Read Me/index.md"
+post_path = "articles/docs/readme/index.md"
 ## 2. 跳转指定页面
 # 跳转地址
 url = "/"
